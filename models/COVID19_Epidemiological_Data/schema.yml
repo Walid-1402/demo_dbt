@@ -1,0 +1,11 @@
+version: 2                                   # Format-Version der YAML-Datei (immer 2)
+
+sources:                                     # hier werden Datenquellen definiert
+  - name: COVID19_Epidemiological_Data       # Name, unter dem wir die Quelle in dbt aufrufen
+    description: 'Ceci est un test.'         # Beschreibung der Quelle
+    database: COVID19_Epidemiological_Data   # Datenbank in Snowflake
+    schema: PUBLIC                           # Schema in dieser Datenbank
+    tables:                                  # Tabellen, die wir benutzen wollen
+      - name: DEMOGRAPHICS                   # Tabellenname in Snowflake
+        description: 'Ceci est un test.'     # Beschreibung der Tabelle
+        
