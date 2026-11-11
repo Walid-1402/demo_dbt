@@ -19,3 +19,9 @@ models:
         data_tests:
           - unique
           - not_null
+  - name: my_first_join                 # gilt für das Modell my_first_join
+    description: "Join von DEMOGRAPHICS mit den Ländercodes"
+    columns:
+      - name: name                      # gilt für die Spalte "name" (Ländername)
+        data_tests:
+          - switzerland                 # unser eigener Test (Name aus {% test switzerland(...) %})

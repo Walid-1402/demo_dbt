@@ -7,5 +7,11 @@ sources:                                     # hier werden Datenquellen definier
     schema: PUBLIC                           # Schema in dieser Datenbank
     tables:                                  # Tabellen, die wir benutzen wollen
       - name: DEMOGRAPHICS                   # Tabellenname in Snowflake
-        description: 'Ceci est un test.'     # Beschreibung der Tabelle
-        
+        description: 'Ceci est un test.'
+           # Beschreibung der Tabelle
+      - name: APPLE_MOBILITY                # zweite Tabelle aus derselben Quelle
+        description: 'switzerland search in APPLE_MOBILITY '
+        columns:
+          - name: COUNTRY_REGION            # Spalte, die geprüft werden soll
+            data_tests:
+              - switzerland                 # unser eigener Test  

@@ -36,3 +36,5 @@ models:
       +materialized: view
 vars:
   countries: ["France", "Spain", "Germany", "United States"]
+#on-run-start: "{{ auto_test(5) }}"
+#on-run-end: "{{ auto_test(6) }}"

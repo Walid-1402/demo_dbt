@@ -1,0 +1,3 @@
+packages:
+  - package: dbt-labs/dbt_utils    # das bekannteste dbt-Paket, viele nützliche Macros und Tests
+    version: 1.4.1                 # Version aus dem dbt Hub
