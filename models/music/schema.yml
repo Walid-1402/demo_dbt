@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: music                         # Name of source in dbt
+    description: 'schema for music_DB'  # 
+    database: MUSIC_DB                  #Database in snowflake
+    schema: PUBLIC                      # schema from S3 link
+    tables:                             # 7 table from raw data  
+      - name: ALBUM        
+      - name: ARTIST
+      - name: GENRE
+      - name: MEDIATYPE
+      - name: PLAYLIST
+      - name: PLAYLISTTRACK
+      - name: TRACK        
